@@ -54,5 +54,7 @@ Sample weather dataset was used to demonstrate pipeline optimization and workflo
 ⚡ Faster DAG execution time
 🔄 Improved reliability and retry handling
 📊 Optimized task orchestration
+
 📂 Project Structure
+
 airflow-low-latency-data-pipeline/ │ ├── dags/ │ └── optimized_pipeline.py ├── scripts/ │ └── data_processing.py ├── requirements.txt └── README.md
