@@ -38,10 +38,15 @@ Source ↓ Data Ingestion ↓ ┌───────────────�
 🧩 Pipeline Flow
 
 Data Ingestion
+
 Data Validation
+
 Data Transformation
+
 Data Loading
+
 Monitoring & Logging
+
 The pipeline is scalable, fault-tolerant, and production-ready.
 
 📊 Dataset
