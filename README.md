@@ -1,65 +1,94 @@
-# airflow-low-latency-data-pipeline
+# 🚀 Airflow Low-Latency Data Pipeline
 
-📌Project Overview
+## 📌 Project Overview
+This project demonstrates the design and implementation of a **high-performance Apache Airflow data pipeline** that achieved an **80% reduction in end-to-end data latency**.
 
-This project focuses on building a high-performance Apache Airflow data pipeline that reduced end-to-end data latency by 80%.
-The pipeline was optimized using efficient DAG design, parallel task execution, and improved scheduling strategies.
+The pipeline was optimized using:
+- Efficient DAG design  
+- Parallel task execution  
+- Improved scheduling and retry strategies  
 
-🎯 Problem Statement
+The solution is **scalable, fault-tolerant, and production-ready**.
 
-Conventional ETL pipelines often face:
-High execution latency
-Sequential task dependencies
-Inefficient DAG scheduling
-Poor resource utilization
-The objective was to optimize the pipeline for faster data processing and reliable execution.
+---
 
-🚀 Solution Approach
+## 🎯 Problem Statement
+Conventional ETL pipelines often suffer from:
+- High execution latency  
+- Sequential task dependencies  
+- Inefficient DAG scheduling  
+- Poor resource utilization  
 
-Designed an optimized Apache Airflow DAG
-Enabled parallel execution of independent tasks
-Reduced unnecessary dependencies
-Tuned retries, scheduling, and task execution logic
-Improved overall pipeline efficiency
+These issues delay data availability and impact downstream systems.  
+The objective was to **optimize the pipeline for faster and more reliable data processing**.
 
+---
 
-🛠️ Technologies Used
+## 🚀 Solution Approach
+- Designed an optimized Apache Airflow DAG  
+- Enabled **parallel execution** of independent tasks  
+- Eliminated unnecessary task dependencies  
+- Tuned retries, scheduling intervals, and task execution logic  
+- Improved overall pipeline efficiency and reliability  
 
-Apache Airflow
-Python
-SQL
-ETL Concepts
+---
 
-🧩 Pipeline Architechture
+## 🛠️ Technologies Used
+- **Apache Airflow**
+- **Python**
+- **SQL**
+- **ETL & Data Engineering Concepts**
 
-Source ↓ Data Ingestion ↓ ┌───────────────┐ │ Validation │ │ Transformation│ (Parallel Execution) └───────────────┘ ↓ Data Load ↓ Target System
+---
 
-
-🧩 Pipeline Flow
-
+## 🧩 Pipeline Architecture
+Source
+↓
 Data Ingestion
+↓
+┌───────────────────────┐
+│ Data Validation │
+│ Data Transformation │ (Parallel Execution)
+└───────────────────────┘
+↓
+Data Load
+↓
+Target System
 
-Data Validation
 
-Data Transformation
+---
 
-Data Loading
+## 🧩 Pipeline Flow
+1. Data Ingestion  
+2. Data Validation  
+3. Data Transformation  
+4. Data Loading  
+5. Monitoring & Logging  
 
-Monitoring & Logging
+The pipeline is designed for **scalability, fault tolerance, and efficient orchestration**.
 
-The pipeline is scalable, fault-tolerant, and production-ready.
+---
 
-📊 Dataset
+## 📊 Dataset
+A **sample weather dataset** was used to demonstrate pipeline optimization and workflow orchestration.  
+The primary focus of this project is on **Airflow DAG optimization and performance improvement**, not dataset complexity.
 
-Sample weather dataset was used to demonstrate pipeline optimization and workflow orchestration. The focus of this project is on Airflow DAG optimization and performance improvement, not on the dataset complexity.
+---
 
-📈 Key Achievements
+## 📈 Key Achievements
+- ⏱️ **80% reduction in data latency**
+- ⚡ Faster DAG execution through parallelism  
+- 🔄 Improved reliability with optimized retry handling  
+- 📊 Efficient and maintainable task orchestration  
 
-⏱️ 80% reduction in data latency
-⚡ Faster DAG execution time
-🔄 Improved reliability and retry handling
-📊 Optimized task orchestration
+---
 
-📂 Project Structure
-
-airflow-low-latency-data-pipeline/ │ ├── dags/ │ └── optimized_pipeline.py ├── scripts/ │ └── data_processing.py ├── requirements.txt └── README.md
+## 📂 Project Structure
+airflow-low-latency-data-pipeline/
+│
+├── dags/
+│ └── optimized_pipeline.py
+├── scripts/
+│ └── data_processing.py
+├── requirements.txt
+└── README.md
